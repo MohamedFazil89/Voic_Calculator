@@ -1,0 +1,175 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+
+}
+*::selection{
+  background-color: #00ff00;
+  font-weight: bolder;
+
+}
+
+.calculator {
+  padding: 2rem;
+  background-color: black;
+  margin: 1rem;
+  border: 3px solid gray;
+  
+}
+
+input[type="button"] {
+  padding: 1rem;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+  transition: .5s;
+  font-size: 1.5rem;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(88, 255, 88);
+
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  border: 2px solid rgb(255, 255, 255);
+  transition: .5s;
+  padding: 1rem;
+  color: white;
+
+}
+
+input[type="text"]:focus {
+  border: 2px solid green;
+
+
+}
+
+.gridbtn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 2rem;
+  gap: 5px;
+  margin-top: 1rem;
+}
+
+/*  */
+
+
+
+.calculator {
+  position: relative;
+  padding: 30px 30px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+  color: #999;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font: 700 30px consolas;
+  overflow: hidden;
+  
+}
+/* 1032 */
+@media (min-width: 220px) and (max-width: 1032px) {
+  .gridbtn {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-auto-rows: 2rem;
+    gap: 4px;
+  }
+
+}
+
+
+
+.calculator span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #171618, #3bff3b);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.calculator span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to bottom, #ffffff, #00ff00);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.calculator span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #171618, #3bff3b);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.calculator span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: linear-gradient(to top, #171618, #3bff3b);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
