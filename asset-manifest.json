@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Voic_Calculator/static/css/main.a1a7e879.css",
+    "main.js": "/Voic_Calculator/static/js/main.eff8de0c.js",
+    "static/js/787.5f81c7f8.chunk.js": "/Voic_Calculator/static/js/787.5f81c7f8.chunk.js",
+    "index.html": "/Voic_Calculator/index.html",
+    "main.a1a7e879.css.map": "/Voic_Calculator/static/css/main.a1a7e879.css.map",
+    "main.eff8de0c.js.map": "/Voic_Calculator/static/js/main.eff8de0c.js.map",
+    "787.5f81c7f8.chunk.js.map": "/Voic_Calculator/static/js/787.5f81c7f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1a7e879.css",
+    "static/js/main.eff8de0c.js"
+  ]
+}
