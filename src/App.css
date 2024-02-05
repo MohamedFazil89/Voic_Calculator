@@ -1,3 +1,12 @@
+body{
+  overflow: hidden;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -5,7 +14,7 @@
   align-items: center;
   justify-content: center;
   background-color: black;
-
+ 
 }
 *::selection{
   background-color: #00ff00;
@@ -14,7 +23,7 @@
 }
 
 .calculator {
-  padding: 2rem;
+  padding: 0;
   background-color: black;
   margin: 1rem;
   border: 3px solid gray;
@@ -30,6 +39,7 @@ input[type="button"] {
   font-weight: bold;
   transition: .5s;
   font-size: 1.5rem;
+  
 }
 
 input[type="button"]:hover {
@@ -45,6 +55,7 @@ input[type="text"] {
   transition: .5s;
   padding: 1rem;
   color: white;
+  
 
 }
 
@@ -58,7 +69,7 @@ input[type="text"]:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 2rem;
+  grid-auto-rows: 3.5rem;
   gap: 5px;
   margin-top: 1rem;
 }
@@ -82,8 +93,8 @@ input[type="text"]:focus {
 /* 1032 */
 @media (min-width: 220px) and (max-width: 1032px) {
   .gridbtn {
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     grid-auto-rows: 2rem;
     gap: 4px;
   }
